@@ -1,0 +1,149 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Matemática 1° Primaria</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href="estilos.css"> 
+</head> 
+<body> 
+<header> 
+<h1>         
+Mis Primeros Pasos en Matemática</h1> 
+<p>Aprendemos jugando – 1° de Primaria</p> 
+</header> 
+<nav> 
+<a href="#numeros">Números</a> 
+<a href="#suma">Sumas</a> 
+<a href="#resta">Restas</a> 
+<a href="#figuras">Figuras</a> 
+</nav> 
+<main> 
+<section id="numeros" class="tarjeta"> 
+<h2>     
+<p>Contamos objetos y aprendemos los números.</p> 
+<p>     
+Cuenta las estrellas:</p> 
+<p class="ejemplo">                   
+</section> 
+<section id="suma" class="tarjeta"> 
+<h2>    
+Sumas sencillas</h2> 
+<p>Sumar es juntar.</p> 
+Números del 1 al 10</h2> 
+</p> 
+<p class="ejemplo">2         
+</section> 
++ 1         
+<section id="resta" class="tarjeta"> 
+<h2>    
+Restas sencillas</h2> 
+<p>Restar es quitar.</p> 
+<p class="ejemplo">5        
+</section> 
+− 2        
+= 3        
+= 3       
+<section id="figuras" class="tarjeta"> 
+<h2>     
+<ul> 
+<li>    
+<li>    
+<li>    
+Figuras geométricas</h2> 
+Círculo</li> 
+Cuadrado</li> 
+Triángulo</li> 
+<li>▭ Rectángulo</li> 
+</ul> 
+</section> 
+<section class="tarjeta"> 
+<h2>      
+¿Cómo te fue hoy?</h2> 
+<p>Marca una carita:</p> 
+<p class="ejemplo">                 
+</section> 
+</p> 
+</p> 
+</p> 
+</main> 
+<footer> 
+<p>© 2026 – Matemática 1° Primaria</p> 
+</footer> 
+</body> 
+</html> 
+Estilos.css 
+* { 
+margin: 0; 
+padding: 0; 
+box-sizing: border-box; 
+font-family: "Comic Sans MS", Arial, sans-serif; 
+} 
+body { 
+background-color: #f2f9ff; 
+color: #333; 
+} 
+header { 
+background-color: #4fc3f7; 
+color: white; 
+text-align: center; 
+padding: 1.5rem; 
+} 
+nav { 
+background-color: #81d4fa; 
+display: flex; 
+justify-content: center; 
+gap: 1rem; 
+padding: 0.8rem; 
+} 
+nav a { 
+background-color: white; 
+padding: 0.5rem 1rem; 
+border-radius: 20px; 
+text-decoration: none; 
+color: #0277bd; 
+font-weight: bold; 
+} 
+nav a:hover { 
+background-color: #e1f5fe; 
+} 
+main { 
+padding: 1.5rem; 
+display: grid; 
+gap: 1.5rem; 
+max-width: 900px; 
+margin: auto; 
+} 
+.tarjeta { 
+background-color: white; 
+padding: 1.5rem; 
+border-radius: 15px; 
+box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+} 
+.tarjeta h2 { 
+margin-bottom: 0.5rem; 
+color: #0288d1; 
+} 
+.ejemplo { 
+font-size: 1.5rem; 
+margin-top: 0.5rem; 
+} 
+ul { 
+list-style: none; 
+font-size: 1.2rem; 
+} 
+footer { 
+background-color: #4fc3f7; 
+color: white; 
+text-align: center; 
+padding: 1rem; 
+margin-top: 1rem; 
+} 
+/* Responsive */ 
+@media (max-width: 600px) { 
+nav { 
+f
+lex-direction: column; 
+align-items: center; 
+} 
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Básico para Enseñar Matemáticas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .contenedor {
+            margin-top: 40px;
+        }
+        a {
+            display: block;
+            margin: 15px auto;
+            padding: 12px;
+            width: 250px;
+            text-decoration: none;
+            background-color: #3498db;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>EJEMPLO BÁSICO PARA ENSEÑAR MATEMÁTICAS</h1>
+
+    <div class="contenedor">
+        <a href="https://www.ejemplo.com/suma" target="_blank">
+            Suma sencilla
+        </a>
+
+        <a href="https://www.ejemplo.com/resta" target="_blank">
+            Resta sencilla
+        </a>
+
+        <a href="https://www.ejemplo.com/figuras" target="_blank">
+            Figuras geométricas
+        </a>
+    </div>
+
+</body>
+</html>

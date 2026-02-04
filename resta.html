@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Resta sencilla</title>
+</head>
+<body>
+
+<h2>Resta sencilla</h2>
+<p id="ejercicio"></p>
+
+<input type="number" id="respuesta">
+<button onclick="verificar()">Responder</button>
+
+<p id="mensaje"></p>
+<p id="puntaje"></p>
+
+<script>
+let contador = 0;
+let puntos = 0;
+let a, b;
+
+function nuevoEjercicio() {
+    a = Math.floor(Math.random() * 10) + 5;
+    b = Math.floor(Math.random() * 5);
+    document.getElementById("ejercicio").innerText =
+        `Ejercicio ${contador + 1}: ¿Cuánto es ${a} - ${b}?`;
+    document.getElementById("respuesta").value = "";
+}
+
+function verificar() {
+    let r = parseInt(document.getElementById("respuesta").value);
+
+    if (r === a - b) {
+        puntos += 4;
+        document.getElementById("mensaje").innerText = "🎉 LO HICISTE GENIAL";
+    } else {
+        document.getElementById("mensaje").innerText = "❌ RESPUESTA INCORRECTA";
+    }
+
+    contador++;
+
+    if (contador < 5) {
+        nuevoEjercicio();
+    } else {
+        document.getElementById("ejercicio").innerText = "Actividad finalizada";
+        document.getElementById("puntaje").innerText =
+            `Tu nota final es: ${puntos} / 20`;
+    }
+}
+
+nuevoEjercicio();
+</script>
+
+</body>
+</html>
